@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{Ø}Minder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    
+    
+    <style type="text/css">
+
+  @-webkit-keyframes spinneran {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-180deg); }
+  }
+
+</style>
+
+<style type="text/css">
+
+  #stage {
+    margin: 1em auto;
+    -webkit-perspective: 1200px;
+  }
+
+</style>
+
+
+<style type="text/css">
+
+  #spinner {
+   
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 3s;
+    -webkit-transform-style: preserve-3d;
+  }
+ 
+
+</style>
+    
+    
+    
+    
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="co/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png"> -->
+  
+  
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+            <li><a class="brand">{Ø}Minder</a></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+              <li ><a href="index.html">Home</a></li>
+              <li class="active"><a href="java.html">Java</a></li>
+              <li><a href="index.html">Servlets</a></li>
+              <li><a href="index.html">JSP</a></li>
+              <li><a href="index.html">Struts</a></li>
+              <li><a href="index.html">Spring</a></li>
+              <li><a href="index.html">Hibernate</a></li>
+              <li><a href="index.html">Webservices</a></li>
+              <li><a href="index.html">JMS</a></li>
+              <li><a href="index.html">EJB 3.0</a></li>
+              
+            </ul>
+           
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+	<header class="jumbotron subhead" id="overview">
+	  <div class="container">
+	    <h1>Core Java</h1>
+	    <p class="lead">Concepts explained through example, demo yourself to see the output.</p>
+	   
+	  </div>
+	</header>
+
+
+
+    <div class="container">
+
+      <div class="row">
+      	<div class="span3 bs-docs-sidebar">
+        		<ul class="nav nav-list bs-docs-sidenav">
+          		<li><a href="#fundamentals"><i class="icon-chevron-right"></i>Fundamentals</a></li>
+          		<li><a href="#declarations"><i class="icon-chevron-right"></i> Declarations</a></li>
+          		<li><a href="#assignment"><i class="icon-chevron-right"></i> Assignment</a></li>
+          		<li><a href="#operators"><i class="icon-chevron-right"></i>Operators</a></li>
+          		<li><a href="#flowControl"><i class="icon-chevron-right"></i>Flow Control</a></li>
+          		<li><a href="#Oops"><i class="icon-chevron-right"></i>Oop's</a></li>
+          		<li><a href="#exceptionHandling"><i class="icon-chevron-right"></i> Exception Handling</a></li>
+          		<li><a href="#collections"><i class="icon-chevron-right"></i>Collections</a></li>
+          		<li><a href="#threads"><i class="icon-chevron-right"></i> Threads</a></li>
+          		<li><a href="#fileIO"><i class="icon-chevron-right"></i>File I/O</a></li>
+          		<li><a href="#jdbc"><i class="icon-chevron-right"></i> JDBC</a></li>
+          		<li><a href="#annotations"><i class="icon-chevron-right"></i>Annotationss</a></li>
+          		<li><a href="#enum"><i class="icon-chevron-right"></i>Enum</a></li>
+          		<li><a href="#generics"><i class="icon-chevron-right"></i>Generics</a></li>
+        	</ul>
+      	</div>
+      	
+      	<div class="span9">
+      		<section id="fundamentals">
+      		
+      		
+      		<div class="page-header">
+             <h1>Fundamentals</h1>
+          </div>
+
+          <h2>Hello, World!</h2>
+          <p>
+          A java program is made of classes, in other words a class is a fundamental unit of java program.Name of the java program should always be name of the class with <i>".java"</i> extension.
+           In the below code example name of the class is HelloWorld so java program should be named as HelloWorld.java. 
+          </p>
+          
+          <div class="bs-docs-example">
+            <div class="btn-group">
+  				<button class="btn" id="hello">Toggle</button>  
+  				<button class="btn" id="helloDemo">Demo</button> 
+  				<button class="btn" id="helloSource">Source</button> 
+			</div>
+          </div>
+          
+          
+       <div id="stage">
+         <pre class="test12" id="spinner">
+         
+        
+         	public class HelloWorld {
+    			public static void main(String[] args) {
+        			System.out.println("Hello, World!");
+    			}
+		}
+		
+		   
+		</pre>
+		</div>
+		
+
+   
+
+
+
+      		
+      	  <h3>Pointers from above code</h3>
+      	  <ul>
+      	  	<li>main() method should always be public static void and must take single String array as argument</li>
+      	  	<li>When a java program is executed JVM looks for main() method with signature <i>"public static void main(String[] args)"</i>, it's like an entry point for the JVM </li>
+      	  	<li><i>"System.out.println()"</i> is used to display an output to the console</li>
+      	  </ul> 
+          
+      		<h3>Basic Java glossary</h3>
+      		<dl>				      		
+      			<dt><b>Class</b></dt>
+      				<dd>
+      					A class is blue print of real world entity from which objects are created. It defines what data an object can hold and 
+      					what operations an object can do with the data. 
+      				</dd><br>
+      			<dt><b>Object</b></dt>
+      				<dd>
+      					Object is an instance of class, it's a bundle of sate and behavior. 
+      					Sate translates to data defined in the class and behaviors to the operations defined in the class.
+      				</dd><br>
+      			<dt><b>Properties</b></dt>
+      				<dd>
+      					These are the variables where class stores it's data, they define the sate of a class. 
+      				</dd><br>
+      			<dt><b>Methods</b></dt>
+      				<dd>
+      					A Method has set of instructions to perform an operation, they define the behavior of class.
+      				</dd><br>      			
+      			<dt><b>Package</b></dt>
+      				<dd>
+      					A package is like folder where you place all your classes. 
+      					It is useful for logical organization of all the classes defined in your project.
+      				</dd><br>
+      		</dl>
+      		
+      		</section>
+      	
+      	
+      	
+      		
+      	
+      	
+      	</div>
+      	
+      </div>
+      
+      </div> <!-- /container -->
+      
+      <hr>
+
+      <footer>
+        <p>&copy; {Ø}Minder 2013</p>
+      </footer>
+
+    
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+     <script src="js/bootstrap-affix.js"></script>
+
+    <script src="js/holder/holder.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    
+   
+
+    <script src="js/application.js"></script>
+   	<script>
+   	var $element = $('#spinner').bind('webkitAnimationEnd', function(){
+   	    this.style.webkitAnimationName = '';
+   	});
+
+   	
+   	
+
+   	
+		$(document).ready(function(){
+			
+		  $("#hello").click(function(){
+			  
+		    $("#spinner").toggle();
+		   
+		    
+		  });
+		});
+
+		$(document).ready(function(){
+			  $("#helloDemo").click(function(){
+				 
+				  $element.css('webkitAnimationName', 'spinneran');
+				 
+
+				  
+				    	 $element.html('Hello,world!<br><br><br><br><br><br><br><br><br>');
+
+				
+				
+				
+			 });
+			});
+
+		$(document).ready(function(){
+			  $("#helloSource").click(function(){
+				
+				  $element.css('webkitAnimationName', 'spinneran');
+				  
+				
+			    
+			  });
+			});
+		
+	</script>
+	
+  </body>
+</html>

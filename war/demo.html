@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+
+  @-webkit-keyframes spinneran {
+    from { -webkit-transform: rotateY(0deg);    }
+    to   { -webkit-transform: rotateY(-180deg); }
+  }
+
+</style>
+
+<style type="text/css">
+
+  #stage {
+    margin: 1em auto;
+    -webkit-perspective: 1200px;
+  }
+
+</style>
+
+
+<style type="text/css">
+
+  #spinner {
+    
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 3s;
+    -webkit-transform-style: preserve-3d;
+     
+  }
+  
+
+</style>
+
+
+
+</head>
+<body>
+
+<div class="bs-docs-example">
+            <div class="btn-group">
+  				<button class="btn" id="hello" >Toggle</button>  
+  				<button class="btn" id="helloDemo">Demo</button> 
+  				<button class="btn" id="helloSource" >Source</button> 
+			</div>
+          </div>
+          
+
+<div id="stage" style="background: rgba(0,0,0,0.5);">
+<p id="spinner" style="background: rgba(0,0,0,0.5); text-align: center; color: #fff;">Stop, I'm getting dizzy!</p>
+</div>
+  
+</body>
+<script src="js/jquery.js"></script>
+<script>
+var $element = $('#spinner').bind('webkitAnimationEnd', function(){
+    this.style.webkitAnimationName = '';
+});
+
+$(document).ready(function(){
+$('#hello').click(function(){
+    $element.css('webkitAnimationName', 'spinneran');
+    // you'll probably want to preventDefault here.
+    $element.html('Hello,World!');
+});
+$('#helloSource').click(function(){
+    $element.css('webkitAnimationName', 'spinneran');
+    // you'll probably want to preventDefault here.
+    $element.html($('#hello').html);
+});
+
+});
+</script>
+</html>

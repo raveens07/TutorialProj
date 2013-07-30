@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<style  type="text/css">
+@-webkit-keyframes fade {
+  0% { left: 30%; }
+  100% { left: 70%; }
+}
+
+@-moz-keyframes fade {
+  0% { left: 30%; }
+  100% { left: 70%; }
+}
+
+@keyframes fade {
+  0% { left: 30%; }
+  100% { left: 70%; }
+}
+
+.el {
+  -webkit-animation: fade 4s linear infinite alternate;
+  -moz-animation: fade 4s linear infinite alternate;
+  animation: fade 4s linear infinite alternate;
+  position: absolute;
+  padding: 10px;
+  width: 100px;
+  font-size: 0.8em;
+  margin: 0 auto;
+  background: #8ec670;
+  font-family: helvetica;
+  color: #FFF;
+}
+
+#one {
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+#two {
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  top: 50px;
+}
+
+#three {
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  top: 100px;
+}
+
+#four {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  top: 150px;
+}
+
+</style>
+
+</head>
+<body>
+<div id="one" class="el">Linear</div>
+<div id="two" class="el">Ease-In</div>
+<div id="three" class="el">Ease-Out</div>
+<div id="four" class="el">Ease-In-Out</div>
+  
+</body>
+
+</html>
